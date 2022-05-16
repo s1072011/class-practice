@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <exception>
 #include <iomanip>
 
@@ -24,9 +24,13 @@ class MATRIX {
 private:
     size_t     _Row;
     size_t     _Column;
-    MATRIX*    _Inversed_mat{ 0 };
-    double**   _Matrix;
-
+    MATRIX* _Inversed_mat{ 0 };
+    double** _Matrix;
+    void check(double& num) {
+        if (num < DBL_EPSILON && num > -DBL_EPSILON) {
+            num = 0.0;
+        }
+    }
     void free() {
         if (_Matrix != 0) {
             for (size_t i = 0; i < _Row; i++)
@@ -140,7 +144,7 @@ public:
         size_t i;
         size_t j;
         while (r < _Row && c < _Column) {
-            size_t row_max = 0;
+            size_t row_max = r;
             for (i = r; i < _Row; i++) {
                 if (fabs(temp[i][c]) > fabs(temp[row_max][c]))
                     row_max = i;
@@ -154,6 +158,8 @@ public:
                     for (j = 0; j < _Column; j++) {
                         temp[i][j] -= temp[r][j] * f;
                         temp_inversed[i][j] -= temp_inversed[r][j] * f;
+                        check(temp[i][j]);
+                        check(temp_inversed[i][j]);
                     }
                 }
                 else {
@@ -162,6 +168,8 @@ public:
                     for (j = 0; j < _Column; j++) {
                         temp[i][j] /= f;
                         temp_inversed[i][j] /= f;
+                        check(temp[i][j]);
+                        check(temp_inversed[i][j]);
                     }
                 }
             }
