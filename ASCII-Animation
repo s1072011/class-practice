@@ -1,1 +1,34 @@
-<mxfile host="app.diagrams.net" modified="2022-06-10T07:21:39.626Z" agent="5.0 (Windows)" version="18.0.3" etag="XPx_yW4FKwi4ODQ0ErpK" type="github"><diagram id="ZqUm0wTJRIXum1e5FrkN">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-06-10T16:40:16.514Z" agent="5.0 (Windows)" etag="zs1-utmODHB1rOwEvY6I" version="18.0.3" type="github">
+  <diagram id="ZqUm0wTJRIXum1e5FrkN" name="Page-1">
+    <mxGraphModel dx="1038" dy="519" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rdJsEhedNB2Nfo4TB3Lj-1" value="ASCIIText" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="80" width="330" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rdJsEhedNB2Nfo4TB3Lj-2" value="+ kASCII : const unsigned __int64[95]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rdJsEhedNB2Nfo4TB3Lj-1">
+          <mxGeometry y="26" width="330" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="rdJsEhedNB2Nfo4TB3Lj-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="rdJsEhedNB2Nfo4TB3Lj-1">
+          <mxGeometry y="52" width="330" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="rdJsEhedNB2Nfo4TB3Lj-4" value="+ ASCIIText()&#xa;+ get_shape(src : const unsigned __int64&amp;) : Byte&#xa;+ get_diff(X1 : unsigned __int64, X2 : unsigned __int64) : Byte&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rdJsEhedNB2Nfo4TB3Lj-1">
+          <mxGeometry y="60" width="330" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rdJsEhedNB2Nfo4TB3Lj-5" value="Classname" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="330" y="220" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="rdJsEhedNB2Nfo4TB3Lj-6" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rdJsEhedNB2Nfo4TB3Lj-5">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="rdJsEhedNB2Nfo4TB3Lj-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="rdJsEhedNB2Nfo4TB3Lj-5">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="rdJsEhedNB2Nfo4TB3Lj-8" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rdJsEhedNB2Nfo4TB3Lj-5">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
